@@ -1,0 +1,11 @@
+{{define "sms"}}
+
+<h1>ここで SMS 認証をします</h1>
+
+<form action="/sms" method="post">
+  <input type="hidden" name="id" value="{{.}}" />
+  <p>コード: <input type="number" name="code" /></p>
+  <input type="submit" value="認証する" />
+</form>
+
+{{end}}
